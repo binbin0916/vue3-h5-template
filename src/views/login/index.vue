@@ -6,6 +6,7 @@ const wxConfig = reactive({
   appID: "wxc5ed44d9873e5bdd",
   appsecret: "6f52969065b67a8e6f1a7e6b03126073"
 });
+console.log(`output->wxConfig`, wxConfig);
 
 // https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxc5ed44d9873e5bdd&redirect_uri=http://192.168.31.130/about&response_type=code&scope=snsapi_userinfo&state=STATE&connect_redirect=1#wechat_redirect
 

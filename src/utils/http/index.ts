@@ -59,7 +59,7 @@ class Http {
           return result;
         } else {
           // 处理请求错误
-          // showFailToast(message);
+          showFailToast(message);
           return Promise.reject(response.data);
         }
       },
