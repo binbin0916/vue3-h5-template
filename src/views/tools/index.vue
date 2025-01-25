@@ -17,7 +17,10 @@ const handleErrorReq = () => {
     () => {},
     err => {
       console.log(err);
-      showFailToast({ message: $t("tools.reqErr"), wordBreak: "break-word" });
+      showFailToast({
+        message: $t("tools.reqErr"),
+        wordBreak: "break-word"
+      });
     }
   );
 };
