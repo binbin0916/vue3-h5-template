@@ -1,6 +1,7 @@
 {
   "recommendations": [
     "Vue.volar", 
-    "lokalise.i18n-ally"
+    "lokalise.i18n-ally",
+    "EditorConfig.EditorConfig",
   ]
 }
