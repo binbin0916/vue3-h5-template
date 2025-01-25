@@ -81,6 +81,8 @@ export default defineConfig(({ mode }) => {
       port: 80
     },
     build: {
+      emptyOutDir: true, // 打包前清空 dist 文件夹
+      target: "esnext", // esnext 兼容性更好 执行最低限度的转译
       outDir: "dist",
       rollupOptions: {
         output: {
