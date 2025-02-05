@@ -16,7 +16,8 @@ const routes: Array<RouteRecordRaw> = [
         meta: {
           title: "登录",
           noCache: true,
-          noTabbar: true
+          noTabbar: true,
+          noNavbar: true
         }
       },
       {
@@ -40,7 +41,7 @@ const routes: Array<RouteRecordRaw> = [
         name: "About",
         component: () => import("@/views/about/index.vue"),
         meta: {
-          title: "关于",
+          title: "我的",
           noCache: true
         }
       }

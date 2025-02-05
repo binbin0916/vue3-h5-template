@@ -4,7 +4,7 @@
     "tabbar": {
       "home": "Home",
       "tools": "Tools",
-      "about": "About"
+      "about": "User"
     },
     "details": {
       "vue3": "Vue3 + Vite4",
@@ -23,7 +23,7 @@
       "eslint": "ESLint",
       "loading": "First screen loading animation",
       "eruda": "Development environment debugging panel"
-      }
+    }
   },
   "tools": {
     "successBtn": "Successful Request",

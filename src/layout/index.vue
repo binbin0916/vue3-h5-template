@@ -13,7 +13,7 @@ const cachedViews = computed(() => {
 <template>
   <div class="app-wrapper">
     <van-config-provider :theme="useDarkMode() ? 'dark' : 'light'">
-      <template v-if="!$route.meta.noNavbar">
+      <template v-if="!$route.meta?.noNavbar">
         <nav-bar />
       </template>
       <router-view v-slot="{ Component }">
@@ -22,7 +22,7 @@ const cachedViews = computed(() => {
         </keep-alive>
       </router-view>
       <!-- 登录页不显示 tabbar -->
-      <template v-if="!$route.meta.noTabbar">
+      <template v-if="!$route.meta?.noTabbar">
         <tabbar />
       </template>
     </van-config-provider>

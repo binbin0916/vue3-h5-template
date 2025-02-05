@@ -4,7 +4,7 @@ import { reactive } from "vue";
 import { showFailToast, showSuccessToast } from "vant";
 import "vant/es/toast/style";
 import { $t } from "@/locales";
-
+const value = ref("");
 const showList: string[] = reactive([]);
 
 const handleSuccessReq = async () => {
@@ -39,6 +39,7 @@ const handleErrorReq = () => {
         $t("tools.errorBtn")
       }}</van-button>
     </van-space>
+    <van-field v-model="value" label="文本" placeholder="请输入用户名" />
     <div
       class="text-[14px] py-[2px] px-[10px] rounded-[4px] bg-[var(--color-block-background)] mt-[14px]"
     >
